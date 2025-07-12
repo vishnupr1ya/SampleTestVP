@@ -1,4 +1,4 @@
-package com;
+package com.validation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
