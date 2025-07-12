@@ -7,6 +7,9 @@ import java.util.Properties;
 public class Sample {
 	
 	public int userLogin(String userName, String password) throws IOException {
+		System.out.println("This is my first change");
+		
+		
 		Properties properties = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Config.properties");
 		properties.load(fis);
@@ -19,6 +22,8 @@ public class Sample {
 		}else {
 			return 0;
 		}
+		
+	
 	}
 
 }
