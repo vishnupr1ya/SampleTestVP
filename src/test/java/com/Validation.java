@@ -12,6 +12,8 @@ public class Validation {
 	@Test
 	public void validationAppTest() {
 		driver = new ChromeDriver();
+		driver.get("https://www.omrbranch.com/");
+		driver.manage().window().maximize();
 		WebElement textWelcome = driver.findElement(By.xpath("//a[@data-testid = 'username']"));
 		String text =  textWelcome.getText();
 		Assert.assertEquals(text, "Welcome Vishnu");
